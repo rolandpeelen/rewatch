@@ -6,6 +6,7 @@ use crate::clean::clean_mjs_files;
 use crate::helpers;
 use crate::helpers::emojis::*;
 use crate::logs;
+use crate::sourcefiles;
 use crate::package_tree;
 use ahash::AHashSet;
 use console::style;
@@ -1613,6 +1614,7 @@ pub fn build(filter: &Option<regex::Regex>, path: &str, no_timing: bool) -> Resu
     let compile_duration = start_compiling.elapsed();
 
     logs::finalize(&build_state.project_root, &build_state.packages);
+    sourcefiles::print(&build_state.project_root, &build_state.packages);
     pb.finish();
     clean::cleanup_after_build(&build_state);
     if compile_errors.len() > 0 {
