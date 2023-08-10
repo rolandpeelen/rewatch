@@ -8,7 +8,7 @@ pub mod clean;
 pub mod cmd;
 pub mod helpers;
 pub mod logs;
-pub mod sourcefiles;
+pub mod sourcedirs;
 pub mod package_tree;
 pub mod queue;
 pub mod watcher;

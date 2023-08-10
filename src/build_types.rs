@@ -82,9 +82,9 @@ impl BuildState {
         Self {
             module_names: AHashSet::new(),
             modules: AHashMap::new(),
-            packages: packages,
-            project_root: project_root,
-            root_config_name: root_config_name,
+            packages,
+            project_root,
+            root_config_name,
         }
     }
     pub fn insert_module(&mut self, module_name: &str, module: Module) {
