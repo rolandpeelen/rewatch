@@ -1,0 +1,18 @@
+{
+  "dirs": ["src", "src/exception", "src/noalloc"],
+  "pkgs": [
+    [
+      "gentype",
+      "/Users/rwjpeelen/Git/open-source/reanalyze/examples/deadcode/node_modules/gentype"
+    ],
+    [
+      "@glennsl/bs-json",
+      "/Users/rwjpeelen/Git/open-source/reanalyze/examples/deadcode/node_modules/@glennsl/bs-json"
+    ],
+    [
+      "@rescript/react",
+      "/Users/rwjpeelen/Git/open-source/reanalyze/examples/deadcode/node_modules/@rescript/react"
+    ]
+  ],
+  "generated": []
+}

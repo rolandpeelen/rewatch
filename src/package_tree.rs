@@ -159,7 +159,7 @@ fn get_source_dirs(source: bsconfig::Source, sub_path: Option<PathBuf>) -> AHash
     source_folders
 }
 
-fn get_package_dir(package_name: &str, is_root: bool) -> String {
+pub fn get_package_dir(package_name: &str, is_root: bool) -> String {
     if is_root {
         "".to_string()
     } else {
